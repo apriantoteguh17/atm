@@ -1,0 +1,10 @@
+Kindly Restore database in sql server 2005.
+(database backup Files Are Included with .bak extension)
+
+For Admin Login username: osama 
+password: maverick 
+
+Change 'DATA SOURCE' in connection form according to your computername 
+
+
+if you want to contact me: billi.osama@gmail.com

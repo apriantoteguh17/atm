@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F55C13D8-CA8F-48C6-AC8D-4410BC888FB8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ATM.My.MyApplication</StartupObject>
+    <RootNamespace>ATM</RootNamespace>
+    <AssemblyName>ATM</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ATM.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ATM.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CloudToolkitN6, Version=0.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\CloudToolkitNet_N6\CloudToolkitN6.dll</HintPath>
+    </Reference>
+    <Reference Include="img move, Version=1.0.3682.41192, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\imgmove\img move\bin\img move.exe</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Frm_AboutBox.Designer.vb">
+      <DependentUpon>Frm_AboutBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_AboutBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Connection.vb" />
+    <Compile Include="Frm_Add_NewUsers.Designer.vb">
+      <DependentUpon>Frm_Add_NewUsers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Add_NewUsers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Deposit_Cash.Designer.vb">
+      <DependentUpon>Frm_Deposit_Cash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Deposit_Cash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Settings.Designer.vb">
+      <DependentUpon>Frm_Settings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Settings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_MainMenu.Designer.vb">
+      <DependentUpon>Frm_MainMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_MainMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_PinCode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_PinCode.Designer.vb">
+      <DependentUpon>Frm_PinCode.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Transaction_History.Designer.vb">
+      <DependentUpon>Frm_Transaction_History.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Transaction_History.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Transfer_Cash.Designer.vb">
+      <DependentUpon>Frm_Transfer_Cash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Transfer_Cash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Withdraw_Cash.Designer.vb">
+      <DependentUpon>Frm_Withdraw_Cash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Withdraw_Cash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Admin_Login.Designer.vb">
+      <DependentUpon>Frm_Admin_Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Admin_Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Frm_AboutBox.resx">
+      <DependentUpon>Frm_AboutBox.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Add_NewUsers.resx">
+      <DependentUpon>Frm_Add_NewUsers.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Deposit_Cash.resx">
+      <DependentUpon>Frm_Deposit_Cash.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Settings.resx">
+      <DependentUpon>Frm_Settings.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_MainMenu.resx">
+      <DependentUpon>Frm_MainMenu.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_PinCode.resx">
+      <DependentUpon>Frm_PinCode.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Transaction_History.resx">
+      <DependentUpon>Frm_Transaction_History.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Transfer_Cash.resx">
+      <DependentUpon>Frm_Transfer_Cash.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Withdraw_Cash.resx">
+      <DependentUpon>Frm_Withdraw_Cash.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Admin_Login.resx">
+      <DependentUpon>Frm_Admin_Login.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\darkaurora.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shield_Green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\492.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kxconfig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\174.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeleteRed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeleteRed1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeleteRed2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Binoculars.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\my_documents.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Binoculars1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kwallet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kwrite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ixboxlive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kuser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\looknfeel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mydocuments.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\linuxconf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pakistani.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maverick-osama.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\messenger.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
